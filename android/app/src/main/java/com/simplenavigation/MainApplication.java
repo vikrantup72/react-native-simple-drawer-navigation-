@@ -1,5 +1,6 @@
 package com.simplenavigation;
-
+import com.facebook.react.bridge.JSIModulePackage;    // <- add this package
+import com.swmansion.reanimated.ReanimatedJSIModulePackage;  // <- add this package
 import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
@@ -47,6 +48,11 @@ public class MainApplication extends Application implements ReactApplication {
         protected String getJSMainModuleName() {
           return "index";
         }
+  
+      @Override
+      protected JSIModulePackage getJSIModulePackage() {
+        return new ReanimatedJSIModulePackage(); // <- add this module
+      }
       };
 
   @Override
