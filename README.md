@@ -15,7 +15,7 @@ project.ext.react = [
   enableHermes: true                                         <h3>// <- here | clean and rebuild if changing</h3>
 ]
 
-                            <h2><!-- <ProjectName>\babel.config.js --></h2>
+                              <!-- <ProjectName>\babel.config.js -->
 
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
