@@ -1,21 +1,27 @@
                        <!-- Add some code in Main Application.java <ProjectName>\android\app\src\main\java\com\simplenavigation\MainApplication.java -->
 
-import com.facebook.react.bridge.JSIModulePackage;           <h3>// <- add this package</h3>
-import com.swmansion.reanimated.ReanimatedJSIModulePackage;  <h3>// <- add this package</h3>
+<h5>// <- add this package</h5>
+  
+import com.facebook.react.bridge.JSIModulePackage;           
+import com.swmansion.reanimated.ReanimatedJSIModulePackage;  
 
+<h5>// <- add this module</h5>
+  
 @Override
       protected JSIModulePackage getJSIModulePackage() {
-      return new ReanimatedJSIModulePackage();               <h3>// <- add this module</h3>
+      return new ReanimatedJSIModulePackage();               
       }
 
 
-                                                          <!-- \<ProjectName>\android\app\build.gradle -->
+                                      <!-- \<ProjectName>\android\app\build.gradle -->
 
+<h5>// <- here | clean and rebuild if changing</h5>
+  
 project.ext.react = [
-  enableHermes: true                                         <h3>// <- here | clean and rebuild if changing</h3>
+  enableHermes: true                                        
 ]
 
-                                                                <!-- <ProjectName>\babel.config.js -->
+                                      <!-- <ProjectName>\babel.config.js -->
 
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
